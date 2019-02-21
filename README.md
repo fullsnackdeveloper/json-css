@@ -2,10 +2,10 @@
 
 The purpose of this function is to take a JSON object and convert it into a css style sheet.
 
-## Params
+## JSON Object
 
 ```
-{
+const styles = {
     margin: {
         bottom: '20px',
         top: '20px',
@@ -40,6 +40,10 @@ The purpose of this function is to take a JSON object and convert it into a css 
         }
     }
 }
+```
+## Parse
+```
+const file = compiler(styles);
 ```
 
 ## Returns
