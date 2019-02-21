@@ -42,7 +42,7 @@ The purpose of this function is to take a JSON object and convert it into a css 
 }
 ```
 
-## Result
+## Returns
 
 ```
 {
