@@ -6,7 +6,9 @@ module.exports = compiler = (styles) => {
             if(typeof(entry[1]) === 'object') {
                 parser(entry[1], addedPrefix);
             } else {
-                return (entry[1] !== '') ? component.push('    ' + addedPrefix + ': ' + entry[1] + ';') : console.log(addedPrefix + ': no value');
+                if(entry[1] !== '')
+                    return component.push('    ' + addedPrefix + ': ' + entry[1] + ';');
+                return;
             }
         });
     }
