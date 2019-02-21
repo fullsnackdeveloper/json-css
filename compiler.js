@@ -1,6 +1,6 @@
 module.exports = compiler = (styles) => {
     const component = [];
-    function parser(obj, prefix) {
+    parser = (obj, prefix) => {
         Object.entries(obj).map(entry => {
             let addedPrefix = prefix ? (prefix + '-' + entry[0]) : entry[0];
             if(typeof(entry[1]) === 'object') {
