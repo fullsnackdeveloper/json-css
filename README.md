@@ -1,5 +1,7 @@
 # json-css
 
+## Params
+
 ```
 {
     margin: {
@@ -35,5 +37,26 @@
             }
         }
     }
+}
+```
+
+## Result
+
+```
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: inline-block;
+    border-bottom-color: #343434;
+    border-bottom-width: 2px;
+    border-bottom-radius-left: 20px;
+    border-bottom-radius-right: 20px;
+    what-ever-values-you-want: will go here;
 }
 ```
