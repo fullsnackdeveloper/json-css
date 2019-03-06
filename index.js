@@ -1,5 +1,5 @@
 module.exports = {
-    compiler: (styles) => {
+    cssCompiler: (styles) => {
         const component = [];
         parser = (obj, prefix) => {
             Object.entries(obj).map(entry => {
